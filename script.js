@@ -8,7 +8,7 @@ const fetchAdvice=()=>{
     .then(advice=>{
         const adviceIdn=advice.slip.id
         const adviceText=advice.slip.advice
-        advicetext.innerHTML=adviceText
+        advicetext.innerHTML=`"${adviceText}"`
         adviceId.innerHTML=adviceIdn
     })
     .catch(err=>
